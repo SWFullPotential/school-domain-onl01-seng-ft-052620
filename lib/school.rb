@@ -25,5 +25,4 @@ class School
       new_hash[number]
   end
   
-  new_hash
 end
