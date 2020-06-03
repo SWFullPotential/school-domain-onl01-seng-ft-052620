@@ -8,10 +8,8 @@ class School
   
   def add_student(name, grade)
     # unless @roster[grade]
-    #   @roster[grade]
+    #   
     # end
-    # # @roster[grade ||= []
-    # @roster[grade]<< name
     
     self.roster[grade] ||= []
     self.roster[grade] << name
@@ -22,5 +20,10 @@ class School
   end
   
   def sort 
+    new_hash = {}
+    roster.keys.sort.each do |number|
+      new_hash[number]
   end
+  
+  new_hash
 end
